@@ -10,5 +10,5 @@
     <link rel="manifest" href="ico/site.webmanifest">
 <script src="https://cdn.tailwindcss.com"></script>
     
-    <title>{{$title}}</title>
+    <title></title>
 </head>

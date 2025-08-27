@@ -6,23 +6,26 @@
 <section class="cards" id="places">
         <h1 class="title">Tempat yang saya pernah kunjungi</h1>
 
-                @foreach ($posts as $post)
+            <div class="blog-container">
+                @foreach ($artikels as $artikel)
                 <div class="content">
-                    <div class="card">
+                    <div class="blog-card">
                          <div class="icon">
-                           <img class="gambar" src="{{$post["img"]}}"></img>
+                           <img class="gambar" src="{{$artikel['img']}}"></img>
                          </div>
                     <div class="project-info">
-                        <p class="project-catogrey">{{$post["title"]}}</p>
+                        <p class="project-catogrey">{{$artikel["title"]}}</p>
                         <strong class="project-title">
-                            <span>{{$post["comment"]}}</span>
+                            <span>{{$artikel["comment"]}}</span>
                             <button style="padding-left: 5px; margin-right: 3px; padding-right: 2px;">
-                            <a href="/artikel/{{$post['slug']}}" class="more-details">Lainnya</a>
+                            <a href="{{ url('/artikel/' . $artikel['slug']) }}" class="read-more">Lainnya</a>
                             </button>
                         </strong>
                  </div>
+             </div>
             </div>
              @endforeach
+            </div>
 
 
 

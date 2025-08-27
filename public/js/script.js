@@ -1,3 +1,5 @@
+
+//ini tombol hamburger mobile dari sini yaaaa
 function toggleMenu(){
 	const nav = document.getElementById("navLinks");
 	const hamburger = document.getElementById("hamburgerBtn");
@@ -17,28 +19,56 @@ function toggleClose(){
 	hamburger.classList.toggle("hidden", false);
 	close.classList.toggle("hidden");
 }
+//hamburger sampe sini ya ryy
 
-const imagescipan = [
-      'images/cipan2.jpeg',
-      'images/cipan3.jpeg',
-      'images/cipan1.jpeg'
-    ];
-const imgElement = document.getElementById("slider-image");
 
-    let currentIndex = 0;
-    function showImage(index) {
-      imgElement.src = images[index];
+
+
+    //ini di bagian home ya ryy buat animasi aboutnya
+  document.addEventListener("DOMContentLoaded", function () {
+  const aboutCard = document.querySelector(".kartuabout");
+
+  function checkVisibility() {
+    const rect = aboutCard.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      aboutCard.classList.add("show");
     }
+  }
 
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      showImage(currentIndex);
-    }
+  window.addEventListener("scroll", checkVisibility);
+  checkVisibility();
+});
+  //sampe sini
 
-    function prevImage() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showImage(currentIndex);
-    }
 
-    // Ganti gambar otomatis setiap 5 detik
-    setInterval(nextImage, 5000);
+
+//ini buat loading preloadernya ya ryy inget
+document.addEventListener("DOMContentLoaded", function () {
+  const preloader = document.getElementById("preloader");
+
+  setTimeout(() => {
+    preloader.classList.add("hidden");
+  }, 1700);
+});
+//sampe sini
+
+
+
+
+//ini buat bagian daftar artikel yaw
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".blog-card");
+
+  function checkVisibility() {
+    cards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        card.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+  checkVisibility();
+});
+//sampe sini
