@@ -13,22 +13,20 @@ tujuannya adalah membangun personal branding saya sebagai seorang programmer :)
 ## ⚡ INSTALASI DAN SETUP
 
 ### Clone Repository
-```git clone https://github.com/RyyzDev/sc-laravelporto.git```
-
-cd sc-laravelporto
+```git clone https://github.com/RyyzDev/sc-laravelporto.git
+cd sc-laravelporto```
 
 ### Buat File ENV
-cp .env.example .env
+```cp .env.example .env```
 
 ### Buat Key Generate
-php artisan key:generate
+```php artisan key:generate```
 
 ### Buat Seed Migrate
-php artisan migrate --seed
+```php artisan migrate --seed```
 
 ### Jalankan server:
-php artisan serve
-
+```php artisan serve```
 
 
 #### Feel free buat kontribusi atau jadikan portofolio anda :)
