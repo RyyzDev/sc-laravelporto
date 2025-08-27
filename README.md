@@ -13,7 +13,7 @@ tujuannya adalah membangun personal branding saya sebagai seorang programmer :)
 ## ⚡ INSTALASI DAN SETUP
 
 ### Clone Repository
-git clone https://github.com/RyyzDev/sc-laravelporto.git
+'''git clone https://github.com/RyyzDev/sc-laravelporto.git'''
 
 cd sc-laravelporto
 
