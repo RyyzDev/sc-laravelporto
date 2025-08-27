@@ -13,8 +13,8 @@ tujuannya adalah membangun personal branding saya sebagai seorang programmer :)
 ## ⚡ INSTALASI DAN SETUP
 
 ### Clone Repository
-```git clone https://github.com/RyyzDev/sc-laravelporto.git
-cd sc-laravelporto```
+```git clone https://github.com/RyyzDev/sc-laravelporto.git```
+```cd sc-laravelporto```
 
 ### Buat File ENV
 ```cp .env.example .env```
